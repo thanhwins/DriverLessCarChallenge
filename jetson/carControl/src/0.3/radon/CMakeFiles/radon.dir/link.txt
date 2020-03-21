@@ -1,0 +1,2 @@
+/usr/bin/ar cq ../bin/Release/libradon.a  CMakeFiles/radon.dir/radon.cpp.o
+/usr/bin/ranlib ../bin/Release/libradon.a

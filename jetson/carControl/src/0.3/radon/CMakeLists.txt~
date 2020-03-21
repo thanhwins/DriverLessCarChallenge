@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 2.8)
+
+project( radon )
+find_package( OpenCV REQUIRED )
+
+set( source_files
+	radon.h
+	radon.cpp
+)
+
+set( lib_name radon)
+add_library( ${lib_name} ${source_files} )
+target_link_libraries( ${lib_name} ${OpenCV_LIBS} vanishing-point)
+
+
+#set( test_exec_name test_radon)
+#add_executable( ${test_exec_name}  test_radon.cpp )
+
+#target_link_libraries( ${test_exec_name} ${lib_name} ${OpenCV_LIBS})

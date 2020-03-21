@@ -1,0 +1,39 @@
+
+cmake_minimum_required(VERSION 2.8)
+
+project( SignDetection )
+find_package( OpenCV REQUIRED )
+set( OPENNI2_INCLUDE /home/ubuntu/Downloads/2-Linux/OpenNI-Linux-Arm-2.3/Include)
+set( OPENNI2_REDIST  /home/ubuntu/Downloads/2-Linux/OpenNI-Linux-Arm-2.3/Redist)
+include_directories( ${OPENNI2_INCLUDE} )
+link_directories ( ${OPENNI2_REDIST} )
+set(CMAKE_CXX_FLAGS "-fPIC ${CFLAGS_WARN} -std=c++11 ${CMAKE_CXX_FLAGS}")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Ofast")
+    #GCC detects CPUID
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native")
+    set(CFLAGS_WARN "-Wall -Wextra -Wno-unused-parameter -Wno-strict-aliasing")
+set(libname SignDetection )
+
+set(source_files
+SignDetection.cpp
+SignDetection.h
+)
+
+add_library( ${libname} ${source_files})
+
+#target_link_libraries(${test_exec_name2} ${libname} ${OpenCV_LIBS})
+
+
+#set (test_exec_name2 test-kinect-cv2)
+
+#add_executable( ${test_exec_name2} test_kinect_cv2.cpp)
+
+#target_link_libraries(${test_exec_name2} ${libname})
+
+
+
+#set (test_exec_name3 test-kinect-cv2-2)
+
+#add_executable( ${test_exec_name3} test_kinect_cv2_2.cpp)
+
+#target_link_libraries(${test_exec_name3} ${libname})

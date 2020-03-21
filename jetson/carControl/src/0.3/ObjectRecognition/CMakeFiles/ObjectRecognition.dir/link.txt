@@ -1,0 +1,2 @@
+/usr/bin/ar cq ../bin/Release/libObjectRecognition.a  CMakeFiles/ObjectRecognition.dir/SignProc.cpp.o CMakeFiles/ObjectRecognition.dir/SignRecognition.cpp.o
+/usr/bin/ranlib ../bin/Release/libObjectRecognition.a

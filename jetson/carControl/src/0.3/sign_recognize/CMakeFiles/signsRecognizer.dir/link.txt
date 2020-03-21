@@ -1,0 +1,2 @@
+/usr/bin/ar cq ../bin/Release/libsignsRecognizer.a  CMakeFiles/signsRecognizer.dir/signsRecognizer.cpp.o
+/usr/bin/ranlib ../bin/Release/libsignsRecognizer.a

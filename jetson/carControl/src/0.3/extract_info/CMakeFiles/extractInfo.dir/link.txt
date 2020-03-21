@@ -1,0 +1,2 @@
+/usr/bin/ar cq ../bin/Release/libextractInfo.a  CMakeFiles/extractInfo.dir/extractInfo.cpp.o
+/usr/bin/ranlib ../bin/Release/libextractInfo.a

@@ -1,0 +1,2 @@
+/usr/bin/ar cq ../bin/Release/libSignDetection.a  CMakeFiles/SignDetection.dir/SignDetection.cpp.o
+/usr/bin/ranlib ../bin/Release/libSignDetection.a

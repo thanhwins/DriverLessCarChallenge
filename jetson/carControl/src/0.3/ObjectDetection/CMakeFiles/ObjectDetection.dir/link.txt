@@ -1,0 +1,2 @@
+/usr/bin/ar cq ../bin/Release/libObjectDetection.a  CMakeFiles/ObjectDetection.dir/SignDetection.cpp.o
+/usr/bin/ranlib ../bin/Release/libObjectDetection.a
